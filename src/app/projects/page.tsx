@@ -1,37 +1,40 @@
+"use client";
+
 import Layout from "../components/Layout";
+import Tilt from "react-parallax-tilt";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "PHP 2.o",
       description:
-        "A personal portfolio website built with Next.js and Tailwind CSS.",
+        "PHP 2.0 is a social working website that connects people and organizations to collaborate on community welfare projects.",
       image:
-        "https://images.unsplash.com/photo-1612831661042-9f0eea4d0c30?auto=format&fit=crop&w=800&q=80",
-      link: "https://github.com/yourusername/portfolio",
+        "PHP2.o.png",
+      link: "https://php2o.netlify.app/",
     },
     {
-      title: "E-commerce Store",
+      title: "BYF",
       description:
-        "A fully functional e-commerce store with product listing, cart, and checkout.",
+        "PHP 2.0 is a social working website by Bharat Youth Federation that connects people and organizations for community welfare projects.",
       image:
-        "https://images.unsplash.com/photo-1581092795361-2e2e9f67f93b?auto=format&fit=crop&w=800&q=80",
-      link: "https://github.com/yourusername/ecommerce-store",
+        "byf.png",
+      link: "https://byf.netlify.app/",
     },
     {
-      title: "Blog Platform",
+      title: "Baked Bliss",
       description:
-        "A blog platform with CRUD functionality, authentication, and markdown support.",
+        "Baked Bliss is a modern bakery website showcasing delicious baked goods with a clean and user-friendly design.",
       image:
-        "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
-      link: "https://github.com/yourusername/blog-platform",
+        "bakedbliss.png",
+      link: "https://bakedbliss.netlify.app/",
     },
     {
-      title: "Task Manager App",
+      title: "Bharat Go",
       description:
         "A task management app with user authentication and real-time updates.",
       image:
-        "https://images.unsplash.com/photo-1604079626083-80f88fefefaa?auto=format&fit=crop&w=800&q=80",
+        "bharatgo.png",
       link: "https://github.com/yourusername/task-manager",
     },
     {
@@ -46,15 +49,22 @@ export default function Projects() {
 
   return (
     <Layout>
-      <div className="py-12">
-        <h1 className="text-3xl font-bold mb-8 text-center text-green-500">
-          Projects
+      <div className="min-h-screen bg-black py-16 px-6 text-white">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-green-500 text-center mb-12">
+          🚀 Projects
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {projects.map((project) => (
-            <div
+            <Tilt
               key={project.title}
-              className="bg-white/10 backdrop-blur-md shadow-lg rounded-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:border-green-500 border border-transparent hover:shadow-2xl"
+              tiltMaxAngleX={10}
+              tiltMaxAngleY={10}
+              glareEnable={true}
+              glareMaxOpacity={0.2}
+              glareColor="#22c55e"
+              glarePosition="all"
+              className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-md border border-transparent hover:border-green-500 hover:shadow-2xl transition-transform duration-300"
             >
               <img
                 src={project.image}
@@ -62,7 +72,7 @@ export default function Projects() {
                 className="w-full h-48 object-cover"
               />
               <div className="p-6">
-                <h2 className="text-xl font-semibold mb-2 text-green-500">
+                <h2 className="text-xl font-semibold text-green-400 mb-2">
                   {project.title}
                 </h2>
                 <p className="text-gray-300 mb-4">{project.description}</p>
@@ -75,7 +85,7 @@ export default function Projects() {
                   View Project
                 </a>
               </div>
-            </div>
+            </Tilt>
           ))}
         </div>
       </div>

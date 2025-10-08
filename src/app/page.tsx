@@ -1,5 +1,4 @@
 import Layout from "./components/Layout";
-
 export default function Home() {
   return (
     <Layout>
@@ -52,9 +51,9 @@ export default function Home() {
         {/* Right Content */}
         <div className="mt-8 md:mt-0 md:ml-12 flex justify-center items-center flex-shrink-0">
           <img
-            src="https://cdn.dribbble.com/users/32785/screenshots/11267769/media/5e87b7f2a946f3c7d8f07e3745c81406.png?compress=1&resize=600x600"
+            src='homiee.png'
             alt="3D Coding Illustration"
-            className="w-60 sm:w-72 md:w-96 h-60 sm:h-72 md:h-96 rounded-2xl shadow-[0_0_80px_-15px_rgba(0,255,0,0.6)] object-cover"
+            className="w-60 sm:w-72 md:w-[400px] h-[400px] sm:h-72 md:h-96 rounded-2xl shadow-[0_0_80px_-15px_rgba(0,255,0,0.6)] object-contain bg-black"
           />
         </div>
       </section>

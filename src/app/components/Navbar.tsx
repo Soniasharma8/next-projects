@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-2xl font-extrabold text-green-500 tracking-wide">
-          My Portfolio
+          <img src="logo.png" alt="Sonia Sharma" className="w-20 h-10 md:w-40 md:h-12" />
         </h1>
 
         {/* Desktop Links */}
