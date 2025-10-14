@@ -17,23 +17,23 @@ export default function About() {
           {/* Content */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl font-extrabold mb-4 text-green-500">
-              Hi, I'm Sonia 👋
+              Hi, I&apos;m Sonia 👋
             </h1>
             <p className="mt-4 text-gray-300 leading-relaxed max-w-xl">
-              I’m a passionate <span className="text-green-400 font-semibold">MERN Stack Developer </span> 
+              I&apos;m a passionate <span className="text-green-400 font-semibold">MERN Stack Developer </span>
               who loves building 
-              <strong className="text-green-400"> clean, modern, and user-friendly </strong> 
+              <strong className="text-green-400"> clean, modern, and user-friendly </strong>
               websites with <span className="text-green-500 font-medium">Next.js, React, </span>
-              and cutting-edge web technologies.  
+              and cutting-edge web technologies.
               <br />
               <br />
-              I completed a <span className="text-green-400 font-medium">6-month internship </span> 
-              at <strong className="text-green-500">Hoping Minds, Mohali</strong> where I learned 
-              full-stack development. Currently, I’m pursuing a 
-              <span className="text-green-400 font-medium"> full-time internship </span> 
-              at <strong className="text-green-500">Promatics Technologies, Ludhiana</strong>, 
-              where I am working on <span className="text-green-400">live projects</span> and 
-              gaining hands-on experience in <span className="text-green-400">MERN Stack Development</span>.  
+              I completed a <span className="text-green-400 font-medium">6-month internship </span>
+              at <strong className="text-green-500">Hoping Minds, Mohali</strong> where I learned
+              full-stack development. Currently, I&apos;m pursuing a
+              <span className="text-green-400 font-medium"> full-time internship </span>
+              at <strong className="text-green-500">Promatics Technologies, Ludhiana</strong>,
+              where I am working on <span className="text-green-400">live projects</span> and
+              gaining hands-on experience in <span className="text-green-400">MERN Stack Development</span>.
               <br />
               <br />
               My mission is to transform ideas into seamless digital experiences 

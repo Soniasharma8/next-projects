@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import Layout from "../components/Layout";
 import Tilt from "react-parallax-tilt";
 import { motion, AnimatePresence } from "framer-motion";
@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Contact() {
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Show success message
     setSuccess(true);
@@ -16,7 +16,7 @@ export default function Contact() {
     // Hide success message after 3 seconds
     setTimeout(() => setSuccess(false), 3000);
     // Optionally, clear the form fields here
-    e.target.reset();
+    e.currentTarget.reset();
   };
 
   return (
@@ -69,7 +69,7 @@ export default function Contact() {
               />
               <textarea
                 placeholder="Your Message"
-                rows="4"
+                rows={4}
                 className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-green-400 outline-none bg-black text-white border-gray-700 transition duration-300"
                 required
               ></textarea>

@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer";
+import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(req, res) {
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "POST") {
     const { name, email, message } = req.body;
 
@@ -10,7 +11,7 @@ export default async function handler(req, res) {
     }
 
     // Configure transporter
-    let transporter = nodemailer.createTransport({
+    const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com", // Gmail SMTP
       port: 465,
       secure: true,

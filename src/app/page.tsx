@@ -20,7 +20,7 @@ export default function Home() {
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
-            Hello, I’m <span className="text-green-500">Sonia</span>.
+            Hello, I&apos;m <span className="text-green-500">Sonia</span>.
           </h1>
           <p className="text-base sm:text-lg text-gray-300">
             A passionate full-stack developer crafting unique digital

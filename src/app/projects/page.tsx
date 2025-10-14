@@ -38,12 +38,12 @@ export default function Projects() {
       link: "https://github.com/yourusername/task-manager",
     },
     {
-      title: "Weather App",
+      title: "Mamaearth Clone",
       description:
-        "A weather forecasting app using OpenWeather API with search and geolocation features.",
+        "A skincare e-commerce website built with Next.js featuring product listings, user authentication, and responsive design.",
       image:
-        "https://images.unsplash.com/photo-1501973801540-537f08ccae7d?auto=format&fit=crop&w=800&q=80",
-      link: "https://github.com/yourusername/weather-app",
+        "mamaearth.png",
+      link: "https://mamaearth-clone-seven.vercel.app/",
     },
   ];
 
